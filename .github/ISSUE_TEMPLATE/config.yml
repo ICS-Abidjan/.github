@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: ICSA Website
+    url: https://www.icsabidjan.org/
+    about: Visit our school website for general information
+  - name: Academic Support
+    url: https://www.icsabidjan.org/
+    about: Contact school administration for academic support and general inquiries
+  - name: IT Technical Support
+    url: https://www.icsabidjan.org/
+    about: Contact IT support for technical issues not related to GitHub projects

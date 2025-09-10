@@ -1,0 +1,111 @@
+name: Feature Request
+description: Suggest a new feature or enhancement for educational projects
+title: "[Feature]: "
+labels: ["enhancement", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature! Your ideas help improve our educational tools and learning experience.
+
+  - type: dropdown
+    id: feature-category
+    attributes:
+      label: Feature Category
+      description: What category does this feature request fall into?
+      options:
+        - Student Learning Tool
+        - Teaching Resource
+        - Administrative Function
+        - Collaboration Feature
+        - Accessibility Improvement
+        - Documentation Enhancement
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: user-type
+    attributes:
+      label: Primary Beneficiary
+      description: Who would primarily benefit from this feature?
+      options:
+        - Students
+        - Teachers/Educators
+        - Administrators
+        - Parents/Guardians
+        - Community Members
+        - All Users
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Problem or Need
+      description: What problem does this feature solve or what need does it address?
+      placeholder: Describe the current challenge or limitation you're experiencing
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the feature you'd like to see implemented
+      placeholder: A clear and detailed description of what you want to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Have you considered any alternative solutions or features?
+      placeholder: Describe any alternative solutions or features you've considered
+    validations:
+      required: false
+
+  - type: textarea
+    id: educational-impact
+    attributes:
+      label: Educational Impact
+      description: How would this feature improve the educational experience?
+      placeholder: Explain how this feature would enhance teaching, learning, or school operations
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature for your educational activities?
+      options:
+        - Low - Nice to have
+        - Medium - Would improve workflow
+        - High - Significantly impacts learning/teaching
+        - Critical - Blocking educational activities
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, mockups, or examples about the feature request
+      placeholder: Include links to similar features, mockups, or detailed examples
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have read the [Code of Conduct](../CODE_OF_CONDUCT.md)
+          required: true
+        - label: I have searched for existing feature requests before creating this one
+          required: true
+        - label: This feature request aligns with ICSA's educational mission
+          required: true
